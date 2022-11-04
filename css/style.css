@@ -1,0 +1,511 @@
+#wrap {
+    width: 100%;
+    overflow: hidden;
+}
+#wrap > section {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#wrap > section > div {
+    margin: 0 auto;
+}
+
+
+/* home 상단 */
+#main {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.home {
+    position: relative;
+}
+
+.header {
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.header .nav{
+    position: fixed;
+    margin: 0 auto;
+    z-index: 9999;
+}
+.header .nav li{
+    float: left;
+    width: 140px;
+    text-align: center;
+    margin-right: 3px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.header .nav li:nth-child(1):hover {
+    color: rgb(238, 125, 146);
+    fill: rgb(238, 125, 146);
+}
+.header .nav li:nth-child(2):hover {
+    color: rgb(241, 144, 103);
+    fill: rgb(241, 144, 103);
+}
+.header .nav li:nth-child(3):hover {
+    color: rgb(255, 194, 89) ;
+    fill: rgb(255, 194, 89) ;
+}
+.header .nav li:nth-child(4):hover {
+    color: rgb(179, 214, 109);
+    fill: rgb(179, 214, 109);
+}
+.header .nav li:nth-child(5):hover {
+    color: rgb(108, 188, 225);
+    fill: rgb(108, 188, 225);
+}
+.header .nav li:nth-child(6):hover {
+    color: rgb(108, 110, 225);
+    fill: rgb(108, 110, 225);
+}
+.header .nav li:nth-child(7):hover {
+    color: rgba(152, 58, 178, 0.971);
+    fill: rgba(152, 58, 178, 0.971);
+}
+
+/* home 배경 */
+.center {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+    margin-top: 110px;
+}
+.center > img {
+    width: 100%;
+    z-index: 200;
+}
+.center > .title {
+    font-size: 35px;
+    line-height: 80px;
+    color: rgb(41, 48, 43);
+    opacity: 0.9;
+    position: absolute;
+    top: 150px;
+    right: 280px;
+}
+:root {
+    --ti-cursor-color :  rgb(47, 47, 47);
+}
+
+.center_pic {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.center_pic img {
+    position: absolute;
+    top: -530px;
+    left: 180px;
+    z-index: 500;
+    width: 100%;
+    animation: an01 3s;
+}
+@keyframes an01 {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.center_pic img:hover {
+    transform: scale(1.1);
+    animation: ease-in-out;
+}
+
+.box1 {}
+.box1 img {
+    position: absolute;
+    top: 300px;
+    left: -300px;
+    width: 700px;
+    z-index: 400;
+    animation: an02 40s infinite linear;
+}
+@keyframes an02 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.box2 {}
+.box2 img {
+    position: absolute;
+    width: 400px;
+    top: 100px;
+    left: -150px;
+    z-index: 600;
+    opacity: 0.2;
+    animation: an03 10s infinite linear;
+}
+@keyframes an03 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.box3 {}
+.box3 img {
+    position: absolute;
+    width: 500px;
+    top: -100px;
+    right: -300px;
+    opacity: 0.8;
+    z-index: 100;
+    animation: an04 20s infinite linear;
+}
+@keyframes an04 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 프로젝트 */
+[data-scroll] {
+    opacity: 0;
+    will-change: transfrom, scale, opacity;
+    transform: skew(30deg) translateY(3em) scale(0.93);
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+[data-scroll='in'] {
+    opacity: 1;
+    transform:skewX(0) translateY(0) scale(1.1);
+}
+[data-scroll='out'] {
+    opacity: 0;
+}
+
+/* 라이카 */
+#project1 {
+    position: relative;
+    width: 100%;
+    padding-top: 265px;
+}
+#project1 > div {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    border: 2px solid rgb(241, 144, 103);
+    border-radius: 50px;
+    overflow: hidden;
+}
+#project1 div img {
+    width: 500px;
+    margin-left: 50px;
+}
+#project1 div img:hover {
+    transform: scale(1.1);
+}
+.txt1 {
+    width: 300px;
+    height: 400px;
+    margin: 50px 0 0 80px;
+    line-height: 60px;
+}
+.txt1 h2 {
+    font-size: 25px;
+    color: rgb(241, 144, 103);
+}
+.txt1 p {
+    font-size: 19px;
+}
+.txt1 span {
+    display: block;
+    font-size: 18px;
+}
+.txt1 button {
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Poor Story';
+    cursor: pointer;
+    border: 1px solid rgb(241, 144, 103);
+    background-color: rgb(241, 144, 103);
+}
+
+/* 시디즈 */
+#project2 {
+    position: relative;
+    width: 100%;
+    padding-top: 265px;
+}
+#project2 > div {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    border: 2px solid rgb(255, 194, 89);
+    border-radius: 50px;
+    overflow: hidden;
+}
+#project2 div img {
+    width: 500px;
+    margin-left: 60px;
+}
+#project2 div img:hover {
+    transform: scale(1.1);
+}
+.txt2 {
+    width: 300px;
+    height: 400px;
+    margin: 50px 0 0 80px;
+    line-height: 60px;
+}
+.txt2 h2 {
+    font-size: 25px;
+    color: rgb(255, 194, 89);
+}
+.txt2 p {
+    font-size: 19px;
+}
+.txt2 span {
+    display: block;
+    font-size: 18px;
+}
+.txt2 button {
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Poor Story';
+    cursor: pointer;
+    border: 1px solid rgb(255, 194, 89);
+    background-color: rgb(255, 194, 89) ;
+}
+
+/* 마켓컬리 */
+#project3 {
+    position: relative;
+    width: 100%;
+    padding-top: 265px;
+}
+#project3 > div {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    border: 2px solid rgb(179, 214, 109);
+    border-radius: 50px;
+    overflow: hidden;
+}
+#project3 div img {
+    width: 500px;
+    margin-left: 40px;
+}
+#project3 div img:hover {
+    transform: scale(1.1);
+}
+#project3 div .txt3 {
+    width: 350px;
+    height: 400px;
+    margin: 50px 0 0 40px;
+    line-height: 60px;
+}
+.txt3 h2 {
+    font-size: 25px;
+    color: rgb(179, 214, 109);
+}
+.txt3 p {
+    font-size: 19px;
+}
+.txt3 span {
+    display: block;
+    font-size: 18px;
+}
+.txt3 button {
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Poor Story';
+    cursor: pointer;
+    border: 1px solid rgb(179, 214, 109);
+    background-color:  rgb(179, 214, 109);
+}
+
+/* to do list */
+#project4 {
+    position: relative;
+    width: 100%;
+    padding-top: 265px;
+}
+#project4 > div {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    border: 2px solid rgb(108, 188, 225);
+    border-radius: 50px;
+    overflow: hidden;
+}
+#project4 div img {
+    width: 500px;
+    margin-left: 50px;
+}
+#project4 div img:hover {
+    transform: scale(1.1);
+}
+#project4 div .txt4 {
+    width: 300px;
+    height: 400px;
+    margin: 50px 0 0 80px;
+    line-height: 60px;
+}
+.txt4 h2 {
+    font-size: 25px;
+    color: rgb(108, 188, 225);
+}
+.txt4 p {
+    font-size: 19px;
+}
+.txt4 span {
+    display: block;
+    font-size: 18px;
+}
+.txt4 button {
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Poor Story';
+    cursor: pointer;
+    border: 1px solid rgb(108, 188, 225);
+    background-color: rgb(108, 188, 225);
+}
+
+/* 메일 보내기 */
+#project5 {
+    position: relative;
+    width: 100%;
+    padding-top: 265px;
+}
+#project5 > div {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    border: 2px solid rgb(108, 110, 225);
+    border-radius: 50px;
+    overflow: hidden;
+}
+#project5 div img {
+    padding-left: 100px;
+    width: 350px;
+}
+#project5 div img:hover {
+    transform: scale(1.1);
+}
+#project5 div .txt5 {
+    width: 400px;
+    height: 400px;
+    margin: 50px 0 0 150px;
+    line-height: 35px;
+}
+.txt5 h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: rgb(108, 110, 225);
+}
+.txt5 p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+.txt5 span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.txt5 button {
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Poor Story';
+    cursor: pointer;
+    border: 1px solid rgb(108, 110, 225);
+    background-color: rgb(108, 110, 225);
+}
+
+/* 하단 */
+#contact {
+    position: relative;
+    width: 100%;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+#contact > div {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+#contact > div > p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 60px;
+}
+.the_end {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+}
+.the_end > div {
+    margin: 0 auto;
+    width: 200px;
+    height: 160px;
+    margin-top: 150px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.the_end > div:hover {
+    transform: scale(1.1);
+}
+.the_end > div > a {
+    font-size: 40px;
+}
+.the_end > div > a > p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(235, 235, 235);
+    bottom: 0px;
+    text-align: center;
+}
+.footer p {
+    font-size: 16px;
+    padding-top: 30px;
+    font-weight: 600;
+}
