@@ -1,0 +1,400 @@
+@media screen and (max-width: 1050px) {
+    .header .nav li{
+        width: 130px;
+    }
+
+    /* home 배경 */
+    .center {
+        width: 800px;
+        height: 600px;
+        margin-top: 150px;
+    }
+    .center > .title {
+        font-size: 20px;
+        line-height: 60px;
+        top: 100px;
+        right: 180px;
+    }
+
+    .center_pic {
+        width: 300px;
+        height: 300px;
+    }
+    .center_pic img {
+        top: -350px;
+        left: 100px;
+        z-index: 500;
+    }
+    
+    .box1 img {
+        top: 250px;
+        left: -300px;
+        width: 500px;
+    }
+  
+    .box2 img {
+        width: 250px;
+        top: 100px;
+        left: -120px;
+    }
+
+    .box3 img {
+        width: 400px;
+        top: -100px;
+        right: -250px;
+    }
+
+    /* 라이카 */
+    #project1 > div {
+        width: 600px;
+        height: 500px;
+    }
+    #project1 div img:hover {
+        transform: none;
+    }
+    #project1 div img:hover + .txt1,
+    .txt1:hover {
+        opacity: 0.9;
+        position: absolute;
+        width: 500px;
+    }
+
+    .txt1 {
+        position: absolute;
+        top: 0;
+        left: -30px;
+        width: 500px;
+        opacity: 0;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    /* 시디즈 */
+    #project2 > div {
+        width: 600px;
+        height: 500px;
+    }
+    #project2 div img {
+        margin-left: 50px;
+    }
+    #project2 div img:hover {
+        transform: none;
+    }
+    #project2 div img:hover + .txt2,
+    .txt2:hover {
+        opacity: 0.9;
+        position: absolute;
+        width: 500px;
+    }
+
+    .txt2 {
+        position: absolute;
+        top: 0;
+        left: -30px;
+        width: 500px;
+        opacity: 0;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    /* 마켓컬리 */
+    #project3 > div {
+        width: 600px;
+        height: 500px;
+    }
+    #project3 div img {
+        margin-left: 50px;
+    }
+    #project3 div img:hover {
+        transform: none;
+    }
+    #project3 div img:hover + .txt3,
+    .txt3:hover {
+        opacity: 0.9;
+        position: absolute;
+        width: 500px;
+    }
+
+    .txt3 {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 500px;
+        opacity: 0;
+        text-align: center;
+        background-color: #fff;
+    }
+
+
+    /* to do list */
+    #project4 > div {
+        width: 600px;
+        height: 500px;
+    }
+    #project4 div img {
+        margin-left: 50px;
+    }
+    #project4 div img:hover {
+        transform: none;
+    }
+    #project4 div img:hover + .txt4,
+    .txt4:hover {
+        opacity: 0.9;
+        position: absolute;
+        width: 500px;
+    }
+
+    .txt4 {
+        position: absolute;
+        top: 0;
+        left: -30px;
+        width: 500px;
+        opacity: 0;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    /* 메일 보내기 */
+    #project5 > div {
+        width: 600px;
+        height: 500px;
+    }
+    #project5 div img {
+        margin-left: 30px;
+    }
+    #project5 div img:hover {
+        transform: none;
+    }
+    #project5 div img:hover + .txt5,
+    .txt5:hover {
+        opacity: 0.9;
+        position: absolute;
+        width: 500px;
+    }
+
+    .txt5 {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        width: 500px;
+        opacity: 0;
+        text-align: center;
+        background-color: #fff;
+    }
+
+}
+
+/* 너비 480기준 */
+@media screen and (max-width: 650px) {
+    .header {
+        width: 100%;
+        height: 110px;
+        margin-top: 0px;
+    }
+    .header .nav {
+        margin: 0 auto;
+        width: 100%;
+        padding: 30px 0 10px 0;
+        opacity: 0.9;
+        background-color: rgb(252, 252, 252);
+    }
+    .header .nav li{
+        position: relative;
+        width: 100px;
+        height: 30px;
+        margin: 0 5px 10px 15px; 
+    }
+
+    /* home 배경 */
+    .center {
+        width: 600px;
+        height: 100%;
+        margin-top: 150px;
+    }
+    .center > img {
+        width: 600px;
+        height: 100%;
+        z-index: 200;
+    }
+    .center > .title {
+        font-size: 16px;
+        line-height: 40px;
+        top: 90px;
+        right: 180px;
+    }
+
+    .center_pic {
+        width: 200px;
+        height: 200px;
+    }
+    .center_pic img {
+        top: -250px;
+        left: 50px;
+        z-index: 500;
+    }
+    
+    .box1 img {
+        top: 180px;
+        left: -200px;
+        width: 400px;
+    }
+  
+    .box2 img {
+        width: 200px;
+        top: -60px;
+        left: -80px;
+    }
+
+    .box3 img {
+        width: 300px;
+        top: 100px;
+        right: -100px;
+    }
+
+    /* 라이카 */
+    #project1 {
+        padding-top: 300px;
+    }
+    #project1 > div {
+        width: 400px;
+        height: 600px;
+    }
+    #project1 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    #project1 div img:hover + .txt1,
+    .txt1:hover {
+        width: 400px;
+    }
+
+    .txt1 {
+        left: 0px;
+        width: 400px;
+        height: 500px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        margin: 50px 0 0 0;
+    }
+
+    /* 시디즈 */
+    #project2 {
+        padding-top: 300px;
+    }
+    #project2 > div {
+        width: 400px;
+        height: 600px;
+    }
+    #project2 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    #project2 div img:hover + .txt2,
+    .txt2:hover {
+        width: 400px;
+    }
+
+    .txt2 {
+        left: 0px;
+        width: 400px;
+        height: 500px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        margin: 50px 0 0 0;
+    }
+
+    /* 마켓컬리 */
+    #project3 {
+        padding-top: 300px;
+    }
+    #project3 > div {
+        width: 400px;
+        height: 600px;
+    }
+    #project3 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    #project3 div img:hover + .txt3,
+    .txt3:hover {
+        width: 400px;
+    }
+
+    .txt3 {
+        left: 0px;
+        width: 400px;
+        height: 500px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        margin: 50px 0 0 0;
+    }
+
+
+    /* to do list */
+    #project4 {
+        padding-top: 300px;
+    }
+    #project4 > div {
+        width: 400px;
+        height: 600px;
+    }
+    #project4 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    #project4 div img:hover + .txt4,
+    .txt4:hover {
+        width: 400px;
+    }
+
+    .txt4 {
+        left: 0px;
+        width: 400px;
+        height: 500px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        margin: 50px 0 0 0;
+    }
+
+    /* 메일 보내기 */
+    #project5 {
+        padding-top: 300px;
+    }
+    #project5 > div {
+        width: 400px;
+        height: 600px;
+    }
+    #project5 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: -75px;
+    }
+    #project5 div img:hover + .txt5,
+    .txt5:hover {
+        width: 400px;
+    }
+
+    .txt5 {
+        left: 0px;
+        width: 400px;
+        height: 500px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        margin: 50px 0 0 0;
+    }
+
+    /* 하단 */
+    #contact > div {
+        width: 400px;
+    }
+    .the_end {
+        width: 400px;
+    }
+    .the_end > div {
+        width: 200px;
+    }
+}
