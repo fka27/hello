@@ -184,7 +184,6 @@
 
 }
 
-/* 너비 480기준 */
 @media screen and (max-width: 650px) {
     .header {
         width: 100%;
@@ -391,10 +390,220 @@
     #contact > div {
         width: 400px;
     }
+    #contact > div > p {
+        font-size: 18px;
+    }
     .the_end {
         width: 400px;
     }
     .the_end > div {
         width: 200px;
+        margin-top: 70px;
     }
+}
+
+
+@media screen and (max-width: 450px) {
+    .header {
+        width: 100%;
+        height: 110px;
+        margin-top: 0px;
+    }
+    .header .nav {
+        margin: 0 auto;
+        width: 100%;
+        padding: 30px 0 10px 0;
+        opacity: 0.9;
+        background-color: rgb(252, 252, 252);
+    }
+    .header .nav li{
+        position: relative;
+        width: 100px;
+        height: 30px;
+        margin: 5px 5px 10px 20px;
+    }
+
+    /* home 배경 */
+    .center {
+        width: 600px;
+        height: 100%;
+        margin-top: 150px;
+    }
+    .center > img {
+        width: 600px;
+        height: 100%;
+        z-index: 200;
+    }
+    .center > .title {
+        font-size: 16px;
+        line-height: 40px;
+        top: 90px;
+        right: 240px;
+    }
+
+    .center_pic {
+        width: 200px;
+        height: 200px;
+    }
+    .center_pic img {
+        top: -250px;
+        left: 20px;
+        z-index: 500;
+    }
+    
+    .box1 img {
+        top: 180px;
+        left: -200px;
+        width: 400px;
+    }
+  
+    .box2 img {
+        width: 200px;
+        top: -60px;
+        left: -80px;
+    }
+
+    .box3 img {
+        width: 300px;
+        top: 200px;
+        right: 0px;
+    }
+
+    /* 라이카 */
+    #project1 {
+        padding-top: 300px;
+    }
+    #project1 > div {
+        width: 300px;
+        height: 400px;
+    }
+    #project1 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    #project1 div img:hover + .txt1,
+    .txt1:hover {
+        width: 300px;
+    }
+
+    .txt1 {
+        left: 0px;
+        width: 300px;
+        height: 400px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        margin: 0px 0 0 0;
+    }
+
+    /* 시디즈 */
+    #project2 {
+        padding-top: 300px;
+    }
+    #project2 > div {
+        width: 300px;
+        height: 400px;
+    }
+    #project2 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    #project2 div img:hover + .txt2,
+    .txt2:hover {
+        width: 300px;
+    }
+
+    .txt2 {
+        left: 0px;
+        width: 300px;
+        height: 400px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        margin: 0px 0 0 0;
+    }
+
+    /* 마켓컬리 */
+    #project3 {
+        padding-top: 300px;
+    }
+    #project3 > div {
+        width: 300px;
+        height: 400px;
+    }
+    #project3 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    #project3 div img:hover + .txt3,
+    .txt3:hover {
+        width: 300px;
+    }
+
+    .txt3 {
+        left: 0px;
+        width: 300px;
+        height: 400px;
+        padding-top: 5px;
+        box-sizing: border-box;
+        margin: 0px 0 0 0;
+        line-height: 55px;
+    }
+
+
+    /* to do list */
+    #project4 {
+        padding-top: 300px;
+    }
+    #project4 > div {
+        width: 300px;
+        height: 400px;
+    }
+    #project4 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    #project4 div img:hover + .txt4,
+    .txt4:hover {
+        width: 300px;
+    }
+
+    .txt4 {
+        left: 0px;
+        width: 300px;
+        height: 400px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        margin: 0px 0 0 0;
+    }
+
+    /* 메일 보내기 */
+    #project5 {
+        padding-top: 300px;
+    }
+    #project5 > div {
+        width: 300px;
+        height: 400px;
+    }
+    #project5 div img {
+        width: 100%;
+        height: 100%;
+        margin-left: -75px;
+    }
+    #project5 div img:hover + .txt5,
+    .txt5:hover {
+        width: 300px;
+    }
+
+    .txt5 {
+        left: 0px;
+        width: 300px;
+        height: 400px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        margin: 0px 0 0 0;
+    }
+
 }
